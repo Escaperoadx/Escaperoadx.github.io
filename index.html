@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta property="og:description" content="Play Escape Road, the ultimate endless car chase game by GemGamer Studio. 🚓 Dodge the police, collect coins, unlock cars, and test your driving skills!" />
+  <title>Escape Road — Endless Car Chase Game | GemGamer Studio</title>
+  <link href="/icons/favicon.png" rel="shortcut icon">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Escape Road — Endless Car Chase Game | GemGamer Studio" />
+  <meta property="og:description" content="Play Escape Road — an addictive endless car chase game by GemGamer Studio. Dodge police, unlock dozens of cars, and master fast-paced, browser-based driving. No download required." />
+  <meta property="og:type" content="game" />
+  <meta property="og:url" content="https://Escaperoadx.github.io/escape-road" />
+  <!-- <meta property="og:image" content="https://Escaperoadx.github.io/icons/favicon.png" /> -->
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Escape Road — Endless Car Chase Game | GemGamer Studio" />
+  <meta name="twitter:description" content="Play Escape Road — an addictive endless car chase game by GemGamer Studio. Dodge police, unlock dozens of cars, and master fast-paced, browser-based driving. No download required." />
+  <!-- <meta name="twitter:image" content="https://Escaperoadx.github.io/icons/favicon.png" /> -->
+
+  <!-- Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Manifest + Theme -->
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#007bff" />
+
+  <!-- Schema JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Escape Road",
+    "alternateName": ["Escape Road X", "Escape Road 2", "Escape Road Game"],
+    "url": "https://yourdomain.com/escape-road",
+    "image": "https://yourdomain.com/images/banner.jpg",
+    "description": "🚓💨 Escape Road is an endless car chase game by GemGamer Studio. Dodge police, collect coins, unlock cars, and test your driving reflexes!",
+    "author": {
+      "@type": "Organization",
+      "name": "GemGamer Studio",
+      "url": "https://yourdomain.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "GemGamer Studio",
+      "url": "https://yourdomain.com"
+    },
+    "genre": ["Racing", "Endless Runner", "Arcade"],
+    "playMode": ["SinglePlayer"],
+    "operatingSystem": ["Windows", "MacOS", "Android", "iOS"],
+    "applicationCategory": "Game",
+    "gamePlatform": ["Web Browser", "Mobile Browser"],
+    "inLanguage": "en",
+    "datePublished": "2024-05-01",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock"
+    }
+  }
+  </script>
+
+  <style>
+    body { margin:0; padding:0; font-family: Arial, sans-serif; }
+    header { background:white; padding:0; box-shadow:0 2px 4px rgba(0,0,0,0.1); }
+    .navbar-brand { font-weight:bold; color:#333; text-decoration:none; font-size:1.2em; }
+    .navbar-nav .nav-link { color:#666; margin:0 15px; text-decoration:none; }
+    .navbar-nav .nav-link:hover { color:#333; }
+
+    .play-button {
+      background:#007bff; color:white; padding:12px 24px;
+      border:none; border-radius:6px; font-weight:bold;
+      text-decoration:none; display:inline-block; margin:20px auto;
+    }
+    .play-button:hover { background:#0056b3; color:white; }
+
+    .game-box { width:100%; max-width:1200px; margin:0 auto; padding:0 15px; }
+    .game-container {
+      position:relative; height:0; width:100%; padding-bottom:50%;
+      background:linear-gradient(135deg, #ff9a56, #ffad84, #87ceeb);
+      border-radius:10px; overflow:hidden;
+    }
+    .fullscreen-btn {
+      position:absolute; top:10px; right:10px; z-index:2000;
+      background:rgba(0,0,0,0.6); color:white; border:none;
+      padding:8px 12px; border-radius:6px; cursor:pointer; font-size:18px;
+    }
+    .fullscreen-btn:hover { background:rgba(0,0,0,0.8); }
+
+    .fixed-bottom-btn {
+      position:fixed; bottom:0; left:0; right:0;
+      background:#4CAF50; color:white; text-align:center;
+      padding:12px; z-index:1000; font-weight:bold;
+      /* display:none;  */
+    }
+    .fixed-bottom-btn button {
+      background:white; color:#4CAF50; border:none;
+      padding:6px 12px; border-radius:6px; font-weight:bold;
+      margin-left:12px; cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="/">ESCAPEROADX</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span>☰</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link" href="/How-to-play.html">How to play</a>
+            <a class="nav-link" href="/faq.html">FAQ</a>
+            <a class="nav-link" href="/blog.html">Blog</a>
+            <a class="nav-link" href="/about.html">About us</a>
+            <a class="nav-link" href="/contact.html">Contact</a>
+            <a class="nav-link" href="/privacy.html">Privacy Policy</a>
+            <a class="nav-link" href="/terms.html">Terms and Conditions</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Play Button -->
+  <div class="container text-center">
+    <a href="#" class="play-button">▶ Play Snow Rider – No Ads, Unblocked! Start Playing Now</a>
+  </div>
+
+  <!-- Game Area -->
+  <div class="game-box">
+    <div class="game-container" id="gameContainer">
+      <button class="fullscreen-btn" id="fullscreenBtn" title="Fullscreen">⛶</button>
+      <iframe id="gameIframe" allowtransparency="yes" allow="autoplay" frameborder="0"
+        width="100%" height="100%"
+        style="position:absolute; top:0; left:0; right:0; bottom:0;"
+        marginheight="0" marginwidth="0" scrolling="no"
+        src="/escaperoad/index.html"></iframe>
+    </div>
+  </div>
+
+  <!-- Fixed Bottom Button (Add Now) -->
+  <div class="fixed-bottom-btn" id ='addnowBtn' style="display: none;">
+    
+    📲 Add Snow Rider 3D to your home screen for faster access!
+    <button onclick="installApp()">Add Now</button>
+  </div>
+
+  <!-- Game Description -->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <h1 style="text-align:center; margin-bottom: 30px;">Welcome to <strong>Escape Road</strong> — Browser Racing Game by GemGamer Studio</h1>
+        
+        <p><a href="https://Escaperoadx.github.io"><strong>Escape Road</strong></a>  is more than just a casual driving game – it’s one of the most thrilling endless racing experiences available on the web. Developed by <strong>GemGamer Studio</strong>, this browser-based game lets you jump straight into the action without downloads or installations. </p>
+        
+        <p>
+          From your very first drive, you’ll feel the adrenaline of speeding down highways, dodging obstacles 🚦, and collecting rewards ⭐ that push your racing journey forward. Each reward unlocks new cars and challenges, keeping the excitement alive with every play.  
+        </p>
+        <div style="text-align: center; margin: 30px 0;">
+          <img src="/images/banner.jpg" alt="Escaperoad official logo" style="max-width:100%; height: auto; border-radius: 10px;">
+        </div>
+       
+        <h3>🌟 Why Play <strong>Escape Road</strong>?</h2>
+        <ul>
+          <li>🎮 Endless gameplay with non-stop police chases.</li>
+          <li>🕹️ Simple yet challenging controls for everyone.</li>
+          <li>🚧 Dynamic obstacles that keep you on edge.</li>
+          <li>📱 Smooth performance across all devices and browsers.</li>
+          <li>🚙 Nearly 100 unique cars to unlock and master.</li>
+        </ul>
+
+        <h3>💡 Tips & Tricks to Master <strong>Escape Road</strong></h2>
+        <ol>
+          <li>👀 Stay alert and keep your eyes on the road ahead.</li>
+          <li>⚡ Use speed boosts wisely to escape tricky situations.</li>
+          <li>💰 Collect coins consistently to unlock faster cars.</li>
+          <li>😎 Stay calm under pressure when police surround you.</li>
+          <li>🔁 Practice often to improve reflexes and strategies.</li>
+        </ol>
+
+        <h3>❓ Frequently Asked Questions</h2>
+        <p>1. Is <strong>Escape Road</strong> free to play?</h3>
+        <p> Yes! The game is completely free to play directly in your browser.</p>
+
+        <p>2. Can I play <strong>Escape Road</strong> unblocked?</p>
+        <p>  Absolutely. You can enjoy the game anywhere without restrictions.</p>
+
+        <p>3. Who developed <strong>Escape Road</strong>?</p>
+        <p> The game is proudly created by <strong>GemGamer Studio</strong>, a team passionate about fun browser-based games.</p>
+
+        <p>4. What makes <strong>Escape Road</strong> special compared to other endless runner games?</p>
+        <p> Unlike typical endless runners, <strong>Escape Road</strong> adds the excitement of high-speed police chases, multiple car unlocks, and unpredictable obstacles, keeping players hooked for hours.</p>
+
+        
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p style="text-align:center; margin-bottom: 30px;">© 2025 <strong>GemGamer Studio</strong>. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Auto scroll
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const gameBox = document.querySelector('.play-button');
+        if (gameBox) gameBox.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 500);
+    });
+
+    // Fullscreen
+    const fullscreenBtn = document.getElementById('fullscreenBtn');
+    const gameContainer = document.getElementById('gameContainer');
+    fullscreenBtn.addEventListener('click', () => {
+      if (!document.fullscreenElement) {
+        gameContainer.requestFullscreen().then(() => {
+          fullscreenBtn.innerHTML = '✖'; fullscreenBtn.title = 'Exit Fullscreen';
+        });
+      } else {
+        document.exitFullscreen().then(() => {
+          fullscreenBtn.innerHTML = '⛶'; fullscreenBtn.title = 'Fullscreen';
+        });
+      }
+    });
+    document.addEventListener('fullscreenchange', () => {
+      if (!document.fullscreenElement) {
+        fullscreenBtn.innerHTML = '⛶'; fullscreenBtn.title = 'Fullscreen';
+      }
+    });
+
+
+    // --- PWA setup ---
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js?v=20250906')
+        .then(() => console.log('✅ Service Worker registered'));
+    }
+
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      document.getElementById('addnowBtn').style.display = 'block';
+      console.log('📲 beforeinstallprompt event fired, show Add Now button');
+    });
+
+    function installApp() {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        deferredPrompt.userChoice.then(choice => {
+          console.log('📊 User choice result:', choice);
+          if (choice.outcome === 'accepted') {
+            console.log('🎉 User accepted: App added to home screen');
+          } else {
+            console.log('❌ User dismissed the install prompt');
+          }
+          deferredPrompt = null;
+          document.getElementById('addnowBtn').style.display = 'none';
+        });
+      } else {
+        console.warn('⚠️ deferredPrompt is null, không thể cài đặt.');
+      }
+    }
+  </script>
+  
+
+</body>
+</html>

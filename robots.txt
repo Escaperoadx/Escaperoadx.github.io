@@ -1,0 +1,11 @@
+
+# Allow all search engines
+User-agent: *
+Allow: /
+
+# Block sensitive folders (nếu có, ví dụ assets, build,...)
+Disallow: /Build/
+Disallow: /TemplateData/
+
+# Sitemap location
+Sitemap: https://snowriderx.github.io/sitemap.xml
